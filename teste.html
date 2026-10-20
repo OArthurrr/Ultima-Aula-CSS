@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        .container{
+            background-color: blue;
+            height: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            background-color:brown;
+            height: 200px;
+        }
+
+        @media(max-width:800px){
+            .card {
+                background-color:rgb(114, 114, 114);
+                font-size:30px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">Arthur</div>
+        <div class="card">Arthur</div>
+        <div class="card">Arthur</div>
+        <div class="card">Arthur</div>
+        <div class="card">Arthur</div>
+        <div class="card">Arthur</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(47, 205, 211);
+    /*ativa o css grid*/
+    display: grid;
+    /* cria duas colunas
+    a primeira ocupa 1 fração do espaço disponivel
+    a segunda ocupa 2 frações do espaço disponível*/
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.aclamadas {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px; /* cria um espaço e a seção */
+}
+
+.card {
+    background-color: rgb(180, 64, 64);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*RESPONSIVIDADE: É a capacidade de uma página da internet ou aplicativo ajustar automaticamente seu layout, imagens e elementos visuais para oferecer uma boa experiência de leitura e navegação em qualquer aparelho, como celulares, tablets, laptops e monitores grandes.*/
+
+
+/*media query para tablets*/
+
+@media (max-width:800px){
+    .aclamadas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* midia para celular */
+@media (max-width:500px){
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+    nav {
+        justify-content: center;
+    }
+
+    .aclamadas {
+        grid-template-columns: 1fr;
+    }
